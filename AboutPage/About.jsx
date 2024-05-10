@@ -1,34 +1,52 @@
+// import { CgFigma } from "react-icons/cg";
+// import { VscVscode } from "react-icons/vsc";
+// import { DiJavascript } from "react-icons/di";
+// import { FaReact } from "react-icons/fa6";
+// import { RiTailwindCssFill } from "react-icons/ri";
+// import { FaGitAlt } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import './Style.css';
-import { SiHtml5 } from "react-icons/si";
-import { IoLogoCss3 } from "react-icons/io5";
-import { DiJavascript } from "react-icons/di";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa6";
-import { BsGithub } from "react-icons/bs";
-import { FaGitAlt } from "react-icons/fa6";
-import { VscTerminalCmd } from "react-icons/vsc";
-
-const About = () =>{
+const About = () => {
   return (
-    <div className='mx-auto w-full mt-8 z-10'>
-      <div className='text-center'>
-        <h1 className='font-medium text-3xl text-gray-900 border-b-2 border-rose-400 inline-block '>About </h1>
+    <div className="mt-14 mx-auto w-full">
+      <div className="flex justify-center space-x-1">
+        <h1 className="font-semibold text-2xl text-gray-900">SKILLS & </h1>
+        <h1 className="font-semibold text-2xl text-blue-500">EXPERTISE</h1>
       </div>
 
-      <div className='mx-auto mt-8 flex justify-center space-x-4'>
-        <SiHtml5 size="50px" className='text-orange-400'/>
-        <IoLogoCss3 size="50px" className='text-blue-500'/>
-        <DiJavascript size="50px" className='text-yellow-400'/>
-        <RiTailwindCssFill size="50px" className='text-blue-400'/>
+      <div className="mx-auto w-full mt-10 flex justify-center space-x-10">
 
-        <FaReact size="50px" className='text-blue-500'/>
-        <BsGithub size="50px" className='text-gray-900'/>
-        <FaGitAlt size="50px" className='text-orange-500'/>
-        <VscTerminalCmd size="50px" className='text-gray-900'/>
+        <div className='border-2 border-rose-300 bg-rose-200 rounded-md w-48 px-4 py-4'>
+          <h1 className='text-lg text-rose-500 font-semibold'>COMPUTER SKILLS </h1>
+          <p className='text-gray-800 font-medium px-1'>Visual studio code</p>
+          <p className='text-gray-800 font-medium px-1'>Figma</p>
+          <p className='text-gray-800 font-medium px-1'>Canva</p>
+        </div>
+
+        <div className='w-60 h-1/2 border-2 border-rose-300 bg-rose-200 rounded-md px-4 py-4'>
+          <h1 className='text-lg text-rose-500 font-semibold'>COMPUTER  LANGUAGE </h1>
+          <p className='text-gray-800 font-medium px-1'>HTML</p>
+          <p className='text-gray-800 font-medium px-1'>CSS</p>
+          <p className='text-gray-800 font-medium px-1'>Tailwind Css Framework</p>
+          <p className='text-gray-800 font-medium px-1'>JavaScript</p>
+          <p className='text-gray-800 font-medium px-1'>React js</p>
+        </div>
+
+        <div className='w-56 h-1/2 border-2 border-rose-300 bg-rose-200 rounded-md px-4 py-4'>
+          <div className='flex space-x-1'>
+            <h1 className='text-lg font-semibold text-rose-500'>PERSONAL |</h1>
+            <h2 className='text-purple-600 font-bold pt-0.5'> ENTJ-A</h2>
+          </div>
+          <p className='text-gray-800 font-medium px-1'>Extraverted</p>
+          <p className='text-gray-800 font-medium px-1'>Intuitive</p>
+          <p className='text-gray-800 font-medium px-1'>Thinking</p>
+          <p className='text-gray-800 font-medium px-1'>Judging</p>
+          <p className='text-gray-800 font-medium px-1'>Assertive</p>
+        </div>
       </div>
     </div>
   );
 };
 export default About;
 
-        //  y br thun lw tor mai
+        // kae kai hai pen sticky top-0 
