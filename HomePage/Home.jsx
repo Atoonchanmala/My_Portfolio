@@ -62,7 +62,7 @@ const Home = () => {
         Click the Icon paw to see Awarded
       </p>
 
-      <div className="flex mt-5 w-full flex-wrap mx-11">
+      <div className="flex mt-5 w-full flex-wrap mx-">
         {data && data.length ? (
           data.map((dataItem) => (
             <div
@@ -74,13 +74,13 @@ const Home = () => {
                   onClick={() => SelectiononClick(dataItem.id)}
                   className="flex space-x-1 mt-5 border-2 border-rose-400 rounded-md px-4 py-2 "
                 >
-                  <h3 className="font-semibold text-lg items-center">{dataItem.question}</h3>
-                  <PiPawPrintBold size="20px" className="mt-1" />
+                  <h3 className="font-semibold text-lg text-gray-900 items-center">{dataItem.question}</h3>
+                  <PiPawPrintBold size="25px" className="mt-1" />
                 </div>
 
                 {selection === dataItem.id ? (
-                  <div className="">
-                    <h3>{dataItem.answer}</h3>
+                  <div className="mt-3 border-2 border-blue-600 px-4 py-2 rounded-lg">
+                    <h3 className="font-base text-gray-800">{dataItem.answer}</h3>
                   </div>
                 ) : null}
               </div>
@@ -97,4 +97,4 @@ const Home = () => {
 };
 export default Home;
 
-        // tor jut items
+        // not commit to git bash
