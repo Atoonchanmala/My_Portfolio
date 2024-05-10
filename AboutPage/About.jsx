@@ -1,10 +1,3 @@
-// import { CgFigma } from "react-icons/cg";
-// import { VscVscode } from "react-icons/vsc";
-// import { DiJavascript } from "react-icons/di";
-// import { FaReact } from "react-icons/fa6";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { FaGitAlt } from "react-icons/fa";
-// import { FaGithub } from "react-icons/fa";
 import './Style.css';
 const About = () => {
   return (
