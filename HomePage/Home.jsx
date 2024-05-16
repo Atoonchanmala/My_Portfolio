@@ -1,40 +1,47 @@
 import { useState } from "react";
 import data from "./Data";
 import "./Style.css";
-// import { PiDogDuotone } from "react-icons/pi";
 import { SiProbot } from "react-icons/si";
 import { IoPawSharp } from "react-icons/io5";
 import { PiPawPrintBold } from "react-icons/pi";
 const Home = () => {
+  // hook Select Element
   const [selection, setSelection] = useState(null);
 
   const SelectiononClick = (getSelection) => {
     setSelection(getSelection === selection ? null : getSelection);
   };
   console.log(selection);
+
   return (
     <div className="mx-auto w-full h-auto px-4 bg-white">
-      <div className="bg-white sticky top-0 h-17 mx-11">
-        <div className="flex justify-between items-center">
-          <div className="flex">
-            <h1 className="font-semibold text-2xl text-gray-900 mt-2">Atoon</h1>
-            <p className="mt-2 font-semibold text-2xl text-rose-400">
-              Portfolio
-            </p>
+      <div className="w-full fixed top-0 z-40">
+        <div className="bg-white h-17 mx-11">
+          <div className="flex justify-between items-center">
+            <div className="flex">
+              <h1 className="font-semibold text-2xl text-gray-900 mt-2">
+                Atoon
+              </h1>
+              <p className="mt-2 font-semibold text-2xl text-rose-450">
+                Portfolio
+              </p>
+            </div>
+            {/* <PiDogDuotone size="30px"/> */}
+            <IoPawSharp size="25px" className="mt-3 text-rose-500" />
+            <ul className="flex justify-end space-x-4">
+              <li className="font-semibold text-base text-gray-600 pt-4">
+                Home
+              </li>
+              <li className="font-semibold text-base text-gray-600 pt-4">
+                About
+              </li>
+              <li className="font-semibold text-base text-gray-600 pt-4">
+                Content
+              </li>
+            </ul>
           </div>
-          {/* <PiDogDuotone size="30px"/> */}
-          <IoPawSharp size="25px" className="mt-3 text-rose-500" />
-          <ul className="flex justify-end space-x-4">
-            <li className="font-semibold text-base text-gray-600 pt-4">Home</li>
-            <li className="font-semibold text-base text-gray-600 pt-4">
-              About
-            </li>
-            <li className="font-semibold text-base text-gray-600 pt-4">
-              Content
-            </li>
-          </ul>
+          <hr className="border-1 mt-5 shadow text-rose-200 border-rose-100" />
         </div>
-        <hr className="border-1 mt-7 shadow text-rose-200 border-rose-100" />
       </div>
 
       <div className="flex justify-center mt-24">
@@ -43,7 +50,7 @@ const Home = () => {
             Hi! My name AtoonChanmala
           </p>
           <p className="font-medium text-lg text-gray-600 pt-1 md:2/3 ">
-            Faculty of Engineering,Computer Engineering & IT | october 2021 -
+            Faculty of Engineering,Computer Engineering & IT | October 2021 -
             PRESENT
           </p>
           <div className="flex justify-center space-x-1">
@@ -74,13 +81,17 @@ const Home = () => {
                   onClick={() => SelectiononClick(dataItem.id)}
                   className="flex space-x-1 mt-5 border-2 border-rose-400 rounded-md px-4 py-2 "
                 >
-                  <h3 className="font-semibold text-lg text-gray-900 items-center">{dataItem.question}</h3>
+                  <h3 className="font-semibold text-lg text-gray-900 items-center">
+                    {dataItem.question}
+                  </h3>
                   <PiPawPrintBold size="25px" className="mt-1" />
                 </div>
 
                 {selection === dataItem.id ? (
-                  <div className="mt-3 border-2 border-blue-600 px-4 py-2 rounded-lg">
-                    <h3 className="font-base text-gray-800">{dataItem.answer}</h3>
+                  <div className="mt-3 border-2 border-blue-400 px-4 py-2 rounded-lg">
+                    <h3 className="font-base text-gray-800">
+                      {dataItem.answer}
+                    </h3>
                   </div>
                 ) : null}
               </div>
@@ -96,5 +107,3 @@ const Home = () => {
   );
 };
 export default Home;
-
-        // not commit to git bash
