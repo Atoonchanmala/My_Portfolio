@@ -5,7 +5,6 @@ import { SiProbot } from "react-icons/si";
 import { IoPawSharp } from "react-icons/io5";
 import { PiPawPrintBold } from "react-icons/pi";
 
-
 const Home = () => {
   // hook Select Element
   const [selection, setSelection] = useState(null);
@@ -19,32 +18,35 @@ const Home = () => {
     <div className="mx-auto w-full h-auto px-4 bg-white" id="Home">
       <div className="w-full fixed top-0 z-40">
         <div className="bg-white h-17 mx-11">
-          <div className="flex justify-between items-center">
+          <div className="flex  justify-between items-center">
             <div className="flex">
-              <h1 className="font-semibold text-2xl text-gray-900 mt-2">
+              <h1 className="font-semibold md:text-2xl text-gray-900 mt-2 sm:text-lg">
                 Atoon
               </h1>
-              <p className="mt-2 font-semibold text-2xl text-rose-450">
+              <p className="mt-2 font-semibold md:text-2xl text-rose-450 sm:text-lg">
                 Portfolio
               </p>
             </div>
-            <IoPawSharp size="25px" className="mt-3 text-rose-500" />
+            <IoPawSharp
+              size="25px"
+              className="md:mt-3 sm:mt-2 text-rose-500 lg:mx-60 sm:-ml-64 md:-mx-60"
+            />
 
             <ul className="flex justify-end space-x-4">
-              <li
-                className="font-semibold text-base text-gray-600 pt-4"
-              >
-                <a className="scrollSection h-screen" href="#Home">Home</a>
+              <li className="font-semibold md:text-base sm:text-xm text-gray-600 pt-4">
+                <a className="scrollSection h-screen" href="#Home">
+                  Home
+                </a>
               </li>
-              <li
-                className="font-semibold text-base text-gray-600 pt-4"
-              >
-                <a className="scrollSection h-screen" href="#About">About</a>
+              <li className="font-semibold md:text-base sm:text-xm text-gray-600 pt-4">
+                <a className="scrollSection h-screen" href="#About">
+                  About
+                </a>
               </li>
-              <li
-                className="font-semibold text-base text-gray-600 pt-4"
-              >
-                <a className="scrollSection h-screen" href="#Content">Content</a>
+              <li className="font-semibold md:text-base sm:text-xm text-gray-600 pt-4">
+                <a className="scrollSection h-screen" href="#Content">
+                  Content
+                </a>
               </li>
             </ul>
           </div>
@@ -52,7 +54,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="flex justify-center mt-24 sm:items-center md:text-center">   
+      <div className="flex justify-center mt-24 sm:items-center md:text-center">
         <div className="text-center">
           <p className="font-semibold text-3xl text-gray-900 mr-2 sm:text-lg md:text-3xl">
             Hi! My name AtoonChanmala
@@ -70,14 +72,18 @@ const Home = () => {
       </div>
 
       <div className="mt-28 text-center flex justify-center space-x-1">
-        <h1 className="font-semibold md:text-2xl sm:text-xl text-gray-900">AWARDED &</h1>
-        <h1 className="font-semibold md:text-2xl sm:text-xl text-blue-500">SPONSORSHIP</h1>
+        <h1 className="font-semibold md:text-2xl sm:text-xl text-gray-900">
+          AWARDED &
+        </h1>
+        <h1 className="font-semibold md:text-2xl sm:text-xl text-blue-500">
+          SPONSORSHIP
+        </h1>
       </div>
       <p className="text-center md:text-sm sm:text-xm text-gray-500 font-base ml-3 pt-1 md:block">
         Click the Icon paw to see Awarded
       </p>
 
-              {/* Component item Awarded */}
+      {/* Component item Awarded */}
       <div className="md:grid md:grid-cols-3 sm:grid sm:grid-cols-2">
         {data && data.length ? (
           data.map((dataItem) => (
@@ -116,3 +122,5 @@ const Home = () => {
   );
 };
 export default Home;
+
+// host to github
